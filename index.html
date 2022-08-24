@@ -21,16 +21,22 @@
   <body>
     <header class="header">
       <div class="header-logo">
-        <img class="header-logo__img" src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+        <img
+          class="header-logo__img"
+          src="images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
       </div>
 
       <form class="header-formular" action="#">
         <label for="localisation__label" class="header-formular__label">
-          <span class="header-formular__hiddenLabel">Rechercher votre destionation</span>
+          <span class="header-formular__hiddenLabel"
+            >Rechercher votre destionation</span
+          >
           <i class="fa-solid fa-location-dot"></i>
         </label>
         <input
-        class="header-formular__input"
+          class="header-formular__input"
           type="text"
           name="localisation"
           id="localisation"
@@ -38,15 +44,47 @@
         />
       </form>
     </header>
-    <!-- <main>
-        <section class="intro">
-            <div class="exploration">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
-            </div>
-            <div class="explaination"></div>
-        </section>
-        <section class="menus">
+    <main>
+      <section class="intro">
+        <div class="intro__exploration">
+          <div class="intro__descrition">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>
+              Découvrez des restaurants d'exception, séléctionnés par nos soins
+            </p>
+          </div>
+          <a href="#"
+            ><button class="intro__btn">Explorer nos restaurants</button></a
+          >
+        </div>
+      </section>
+
+      <section class="explaination">
+        <h2>Fonctionnement</h2>
+        <div class="explaination__container">
+          <a class="explaination__link" href="#">
+            <button class="explaination__btn">
+                <span class="explaination__step">1</span>
+                <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+              restaurant
+            </button>
+          </a>
+          <a href="#">
+            <button class="explaination__btn">
+                <div class="explaination__step"><span>2</span></div>
+                <i class="fa-solid fa-list"></i>Composez votre menu
+            </button>
+          </a>
+          <a href="#">
+            <button class="explaination__btn">
+              <div class="explaination__step"><span>3</span></div>
+              <i class="fa-solid fa-store"></i>Dégustez au restaurant
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- <section class="menus">
             <h2>Restaurants</h2>
             <div class="container">
                 <div class="menu-card">
@@ -60,7 +98,7 @@
                     </a>       
                 </div>
             </div>
-        </section>
-    </main> -->
+        </section> -->
+    </main>
   </body>
 </html>

@@ -1,22 +1,27 @@
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: var(--font-family__text);
-    color: var(--text);
-    font-size: 1.6rem;
+body {
+  font-family: var(--font-family__text);
+  color: var(--text);
+  font-size: 1.6rem;
 }
 
-ul{
-    list-style: none;
+h1,
+h2 {
+  padding-bottom: 15px;
 }
 
-a{
-    color: var(--text);
-    text-decoration: none;
+ul {
+  list-style: none;
 }
 
-img{
-    max-width: 100%;
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
