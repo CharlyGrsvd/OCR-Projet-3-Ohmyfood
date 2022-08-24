@@ -6,25 +6,32 @@
   padding: 18px 22px;
   border-radius: 100px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-weight: bold;
 }
 
-.explaination__btn{
+.explaination {
+  &__btn {
     position: relative;
     height: 75px;
-    width: 320px;
+    width: 100%;
     padding: 18px 30px;
     border: none;
-    background: var(--background-grey);
+    background: var(--background-secondary);
     border-radius: 10px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    color: var(--text);
+    color: var(--text-primary);
     font-weight: bold;
     text-align: left;
-    i{
-        padding-right: 20px;
+    &--active {
+      background: var(--active);
     }
+  }
+  &__ico {
+    padding-right: 20px;
+    color: var(--backfround-secondary);
+    &--active {
+      color: var(--primary);
+    }
+  }
 }
-
-

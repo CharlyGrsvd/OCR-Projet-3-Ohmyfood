@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: var(--font-family__text);
-  color: var(--text);
+  color: var(--text-primary);
   font-size: 1.6rem;
 }
 
@@ -24,7 +24,7 @@ ul {
 }
 
 a {
-  color: var(--text);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -40,25 +40,32 @@ img {
   padding: 18px 22px;
   border-radius: 100px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-weight: bold;
 }
 
 .explaination__btn {
   position: relative;
   height: 75px;
-  width: 320px;
+  width: 100%;
   padding: 18px 30px;
   border: none;
-  background: var(--background-grey);
+  background: var(--background-secondary);
   border-radius: 10px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  color: var(--text);
+  color: var(--text-primary);
   font-weight: bold;
   text-align: left;
 }
-.explaination__btn i {
+.explaination__btn--active {
+  background: var(--active);
+}
+.explaination__ico {
   padding-right: 20px;
+  color: var(--backfround-secondary);
+}
+.explaination__ico--active {
+  color: var(--primary);
 }
 
 .header {
@@ -74,28 +81,28 @@ img {
 }
 
 .header-formular {
-  background-color: var(--background-grey);
+  background-color: var(--background-secondary);
   padding: 15px 0;
 }
 .header-formular__hiddenLabel {
   font: 0/0 a;
 }
 .header-formular i {
-  color: var(--dark-grey);
+  color: var(--ico-secondary);
 }
 .header-formular__input {
   border: none;
-  background-color: var(--background-grey);
+  background-color: var(--backfround-secondary);
   padding-left: 10px;
 }
 .header-formular__input::placeholder {
-  color: var(--dark-grey);
+  color: var(--ico-secondary);
   font-weight: bold;
 }
 
 .intro__exploration {
   text-align: center;
-  background: var(--background-grey-light);
+  background: var(--background-tertiary);
   padding: 40px 47px;
 }
 .intro a {
@@ -110,8 +117,8 @@ img {
   text-align: center;
 }
 .explaination__container a {
-  display: inline-block;
-  padding: 20px 0;
+  display: block;
+  padding: 20px 0px 20px 15px;
 }
 .explaination__step {
   position: absolute;
@@ -122,7 +129,7 @@ img {
   left: -15px;
   bottom: 22px;
   background-color: var(--primary);
-  color: var(--text-light);
+  color: var(--text-secondary);
   border-radius: 50%;
   height: 30px;
   width: 30px;

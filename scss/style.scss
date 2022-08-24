@@ -15,21 +15,21 @@
 }
 
 .header-formular {
-  background-color: var(--background-grey);
+  background-color: var(--background-secondary);
   padding: 15px 0;
   &__hiddenLabel {
     font: 0/0 a;
   }
   i {
-    color: var(--dark-grey);
+    color: var(--ico-secondary);
   }
   &__input {
     border: none;
-    background-color: var(--background-grey);
+    background-color: var(--backfround-secondary);
     padding-left: 10px;
   }
   &__input::placeholder {
-    color: var(--dark-grey);
+    color: var(--ico-secondary);
     font-weight: bold;
   }
 }
@@ -37,7 +37,7 @@
 .intro {
   &__exploration {
     text-align: center;
-    background: var(--background-grey-light);
+    background: var(--background-tertiary);
     padding: 40px 47px;
   }
   a {
@@ -51,8 +51,8 @@
   &__container {
     text-align: center;
     a {
-      display: inline-block;
-      padding: 20px 0;
+        display: block;
+        padding: 20px 0px 20px 15px;
     }
   }
   &__step {
@@ -64,7 +64,7 @@
     left: -15px;
     bottom: 22px;
     background-color: var(--primary);
-    color: var(--text-light);
+    color: var(--text-secondary);
     border-radius: 50%;
     height: 30px;
     width: 30px;

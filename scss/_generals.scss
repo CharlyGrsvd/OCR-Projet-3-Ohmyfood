@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: var(--font-family__text);
-  color: var(--text);
+  color: var(--text-primary);
   font-size: 1.6rem;
 }
 
@@ -18,7 +18,7 @@ ul {
 }
 
 a {
-  color: var(--text);
+  color: var(--text-primary);
   text-decoration: none;
 }
 

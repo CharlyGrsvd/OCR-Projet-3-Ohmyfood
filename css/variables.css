@@ -4,12 +4,14 @@
   --primary: #9356dc;
   --secondary: #ff79da;
   --tertiary: #99e2d0;
-  --text: #000000;
-  --text-light:#FFFFFF;
-  --background-light: #FFFFFF;
-  --background-grey: #EAEAEA;
-  --background-grey-light: #F6F6F6;
-  --dark-grey:#353535;
+  --text-primary: #000000;
+  --text-secondary:#FFFFFF;
+  --background-primary: #FFFFFF;
+  --background-secondary: #EAEAEA;
+  --background-tertiary: #F6F6F6;
+  --ico-secondary:#353535;
+  --ico-primary:#7E7E7E;
+  --active: #F5EDFF;
 }
 
 /*# sourceMappingURL=variables.css.map */
