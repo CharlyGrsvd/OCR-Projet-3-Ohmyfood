@@ -27,4 +27,34 @@ img {
   max-width: 100%;
 }
 
+.header-logo {
+  text-align: center;
+  padding: 22px 0 10px 0;
+}
+.header-logo__img {
+  height: 30px;
+  width: auto;
+}
+
+.header-formular {
+  background-color: var(--background-grey);
+  padding: 15px 0;
+  text-align: center;
+}
+.header-formular__hiddenLabel {
+  font: 0/0 a;
+}
+.header-formular i {
+  color: var(--dark-grey);
+}
+.header-formular__input {
+  border: none;
+  background-color: var(--background-grey);
+  padding-left: 10px;
+}
+.header-formular__input::placeholder {
+  color: var(--dark-grey);
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */

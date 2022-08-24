@@ -1,3 +1,32 @@
 @import "reset";
 @import "generals";
 
+.header-logo {
+  text-align: center;
+  padding: 22px 0 10px 0;
+  &__img {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.header-formular {
+  background-color: var(--background-grey);
+  padding: 15px 0;
+  text-align: center;
+  &__hiddenLabel{
+    font: 0/0 a;
+  }
+  i{
+    color: var(--dark-grey);
+  }
+  &__input{
+    border: none;
+    background-color: var(--background-grey);
+    padding-left: 10px;
+  }
+  &__input::placeholder{
+    color: var(--dark-grey);
+    font-weight: bold;
+  }
+}
