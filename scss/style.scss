@@ -3,50 +3,6 @@
 @import "buttons";
 @import "card";
 
-.header {
-  text-align: center;
-}
-
-.header-logo {
-  padding: 22px 0 10px 0;
-  &__img {
-    height: 30px;
-    width: auto;
-  }
-}
-
-.header-formular {
-  background-color: var(--background-secondary);
-  padding: 15px 0;
-
-  &__hiddenLabel {
-    font: 0/0 a;
-  }
-  i {
-    color: var(--ico-secondary);
-  }
-  &__input {
-    border: none;
-    background-color: var(--backfround-secondary);
-  }
-  &__input::placeholder {
-    color: var(--ico-secondary);
-    font-weight: bold;
-  }
-}
-
-.intro {
-  &__exploration {
-    text-align: center;
-    background: var(--background-tertiary);
-    padding: 40px 47px;
-  }
-  a {
-    display: inline-block;
-    padding: 30px 0 10px 0;
-  }
-}
-
 .explaination {
   padding: 40px 20px;
   &__container {
@@ -72,25 +28,70 @@
   }
 }
 
-.restaurants{
-    padding: 47px 20px;
-    &__container{
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
+.restaurants {
+  padding: 47px 20px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+// code propre
+
+.header {
+  text-align: center;
+  .header-logo {
+    padding: 22px 0 10px 0;
+    &__img {
+      height: 30px;
+      width: auto;
     }
+  }
+  .header-formular {
+    background-color: var(--background-secondary);
+    padding: 15px 0;
+    &__hiddenLabel {
+      font: 0/0 a;
+    }
+    &__icoLabel {
+      color: var(--ico-secondary);
+      padding-right: 10px;
+    }
+    &__input {
+      border: none;
+      background-color: var(--background-secondary);
+      width: 140px;
+    }
+    &__input::placeholder {
+      color: var(--ico-secondary);
+      font-weight: bold;
+    }
+  }
+}
+
+.intro {
+  &__exploration {
+    text-align: center;
+    background: var(--background-tertiary);
+    padding: 40px 47px;
+  }
+  &__btn {
+    display: inline-block;
+    margin: 30px 0px 15px 0px;
+    @include primary-btn-design;
+  }
 }
 
 .card {
   @include card-design;
   &__link {
     display: block;
-    @include card-design;
   }
   &__img {
     @include restaurant-img-design;
   }
-  &__description{
+  &__description {
     @include card-description-design;
   }
 }
