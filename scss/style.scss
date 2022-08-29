@@ -1,10 +1,10 @@
+@import "./Utils/variables.scss";
+@import "./Utils/mixins";
+
 @import "./Base/base";
 @import "./Base/typography";
-@import "./Utils/variables.scss";
-@import "./Composants/buttons";
-@import "./Composants/cards";
 
-@import "./Utils/mixins";
+@import "./Composants/buttons";
 
 .header {
   text-align: center;
@@ -38,72 +38,68 @@
 }
 
 .intro {
-  &__exploration {
-    text-align: center;
-    background: var(--background-tertiary);
-    padding: 40px 47px;
-  }
-  &__btn {
-    display: inline-block;
-    margin: 30px 0px 15px 0px;
-    @include primary-btn-design;
+  text-align: center;
+  background: var(--background-tertiary);
+  padding: 40px 47px 55px 47px;
+  &__argument{
+    padding-bottom: 30px;
   }
 }
 
-.explaination {
-  padding: 47px 20px 60px 20px;
-  &__stepContainer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    padding-left: 17px;
-  }
-  &__stepButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 0px;
-    @include secondary-btn-design;
-  }
-  &__stepNumber {
-    margin-left: -17px;
-    @include chip-design;
-  }
-  &__stepIcon {
-    padding: 0px 16px;
-  }
-}
+// .explaination {
+//   padding: 47px 20px 60px 20px;
+//   &__stepContainer {
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 30px;
+//     padding-left: 17px;
+//   }
+//   &__stepButton {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     padding: 20px 0px;
+//     @include secondary-btn-design;
+//   }
+//   &__stepNumber {
+//     margin-left: -17px;
+//     @include chip-design;
+//   }
+//   &__stepIcon {
+//     padding: 0px 16px;
+//   }
+// }
 
-.restaurants {
-  padding: 47px 20px;
-  background-color: var(--background-tertiary);
-  &__containerCards {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    .card {
-      @include card-design;
-      &__link {
-        display: block;
-      }
-      &__img {
-        @include restaurant-imgCard-design;
-      }
-      &__description {
-        @include card-descriptionCard-design;
-      }
-    }
-  }
-}
+// .restaurants {
+//   padding: 47px 20px;
+//   background-color: var(--background-tertiary);
+//   &__containerCards {
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 30px;
+//     .card {
+//       @include card-design;
+//       &__link {
+//         display: block;
+//       }
+//       &__img {
+//         @include restaurant-imgCard-design;
+//       }
+//       &__description {
+//         @include card-descriptionCard-design;
+//       }
+//     }
+//   }
+// }
 
-.footer-content {
-  background-color: var(--background-dark);
-  color: var(--text-secondary);
-  h2 {
-    font-family: var(--font-family__title);
-    font-size: 18px;
-  }
-  nav a {
-    color: var(--text-secondary);
-  }
-}
+// .footer-content {
+//   background-color: var(--background-dark);
+//   color: var(--text-secondary);
+//   h2 {
+//     font-family: var(--font-family__title);
+//     font-size: 18px;
+//   }
+//   nav a {
+//     color: var(--text-secondary);
+//   }
+// }
