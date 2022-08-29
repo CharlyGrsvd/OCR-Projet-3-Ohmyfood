@@ -29,9 +29,11 @@
       </div>
       <form class="header-formular" action="#">
         <label class="header-formular__label" for="localisation__label">
+            <!-- Supprimer la class hidden label. Lors du Nesting j'irai chercher le premier enfant pour lui mettre la propriete font: 0/0 a -->
           <span class="header-formular__hiddenLabel">
             Rechercher votre destination
           </span>
+          <!-- Supprimer la span autour de l'icon  et donc supprimer la clas ico__label. J'irai chercher l'icon lors du Nesting en ciblant la balise <i>-->
           <span class="header-formular__icoLabel">
             <i class="fa-solid fa-location-dot"></i>
           </span>
@@ -47,6 +49,9 @@
     </header>
     <main>
       <section class="intro">
+        <!-- Ici on a u problème d'architecture au niveau du bloc. L'élément "exploration est de trop. Il faut choisir entre exploration et description. Il faut avoir un élement
+            qui contient la description et un element qui contient le bouton ". Le padding que j'utilise certainement sur ma class exploration doit être mis directement sur la section intro.
+        Nous avons une boite de trop dans cette archi -->
         <div class="intro__exploration">
           <div class="intro__descrition">
             <h1>Réservez le menu qui vous convient</h1>
@@ -61,37 +66,42 @@
       </section>
 
       <section class="explaination">
-        <h2>Fonctionnement</h2>
-        <div class="explaination__container">
-          <a class="explaination__link" href="#">
-            <button class="explaination__btn">
-              <span class="explaination__step">1</span>
-              <i class="fa-solid fa-mobile-screen-button explaination__ico"></i
-              >Choisissez un restaurant
-            </button>
+        <h2 class="explaination__title">Fonctionnement</h2>
+        <!-- On peut creer un bloc "step-container"  Ensuite il contiendra un bouton générique que je vais appeler step-button. 
+            Ses éléments seront step-button__index et step-button__. Ensuite  -->
+        <div class="explaination__stepContainer">
+
+            <!-- ici il vaut mieux faire une <ol> puis mettre un lien sur les <li> -->
+          <a class="explaination__stepButton" href="#">
+            <span class="explaination__stepNumber">1</span>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            Choisissez un restaurant
           </a>
-          <a href="#">
-            <button class="explaination__btn">
-              <div class="explaination__step"><span>2</span></div>
-              <i class="fa-solid fa-list explaination__ico"></i>Composez votre
-              menu
-            </button>
+
+          <a href="#" class="explaination__stepButton">
+            <div class="explaination__stepNumber">2</div>
+            <div class="explaination__stepIcon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+            <div class="explaination__stepText">
+              <p>Composez-votre menu</p>
+            </div>
           </a>
-          <a href="#">
-            <button class="explaination__btn explaination__btn--active">
-              <div class="explaination__step"><span>3</span></div>
-              <i
-                class="fa-solid fa-store explaination__ico explaination__ico--active"
-              ></i
-              >Dégustez au restaurant
-            </button>
+          <a href="#" class="explaination__stepButton">
+            <div class="explaination__stepNumber">3</div>
+            <div class="explaination__stepIcon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <div class="explaination__stepText">
+              <p>Dégustez au restaurant</p>
+            </div>
           </a>
         </div>
       </section>
 
       <section class="restaurants">
         <h2>Restaurants</h2>
-        <div class="restaurants__container">
+        <div class="restaurants__containerCards">
           <div class="card">
             <a class="card__link" href="#">
               <img
@@ -168,7 +178,21 @@
       </section>
     </main>
     <footer>
-      <h2>ohmyfood</h2>
+      <div class="footer-content">
+        <h2>ohmyfood</h2>
+        <nav>
+          <li>
+            <span><i class="fa-solid fa-utensils"></i></span>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-handshake-angle"></i></span>
+            <a href="#">Devenir partenaire</a>
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
