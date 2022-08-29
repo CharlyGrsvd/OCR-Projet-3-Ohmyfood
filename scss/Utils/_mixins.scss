@@ -1,14 +1,24 @@
 @mixin btn {
   border: none;
-  padding: 18px 22px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 1.8rem 2.2rem;
+  box-shadow: 0rem 0.3rem 1.5rem rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  cursor: pointer;
   &--primary {
     background: -webkit-linear-gradient(bottom right, #9456dc, #ff79db);
     background: -moz-linear-gradient(bottom right, #9456dc, #ff79db);
     background: linear-gradient(to top left, #9456dc, #ff79db);
-    border-radius: 100px;
-    color: var(--text-secondary);
+    border-radius: 10rem;
+    color: $color-white;
+  }
+  &--step{
+    background-color: $color-background;
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    i{
+      padding-right: 2rem;
+    }
+
   }
 }
 
@@ -27,14 +37,14 @@
 //   justify-content: center;
 //   align-items: center;
 //   background-color: var(--primary);
-//   color: var(--text-secondary);
+//   color: var(--color-white);
 //   border-radius: 50%;
 //   height: 30px;
 //   width: 30px;
 // }
 
 // @mixin card-design {
-//   background-color: var(--background-primary);
+//   background-color: var(--color-white);
 //   border-radius: 15px;
 //   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 // }

@@ -1,14 +1,16 @@
 body {
-  font-family: var(--font-family__text);
-  color: var(--text-primary);
+  font-family: "roboto", sans-serif;
+  color: $color-black;
   font-size: 1.6rem;
+  font-weight: 100;
 }
 
 h1 {
-  padding-bottom: 15px;
+  font-family: "roboto", sans-serif;
+  padding-bottom: 1.5rem;
 }
 h2 {
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 h3 {
   padding-bottom: 5px;
@@ -19,6 +21,6 @@ ul {
 }
 
 a {
-  color: var(--text-primary);
+  color: var(--color-black);
   text-decoration: none;
 }

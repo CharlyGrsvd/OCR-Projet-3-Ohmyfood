@@ -1,0 +1,15 @@
+.accueil-intro {
+    text-align: center;
+    background: $color-background;
+    padding: 40px 47px 55px 47px;
+    &__argument{
+      padding-bottom: 30px;
+    }
+  }
+
+  .explaination{
+    padding: 4rem 2rem 6rem 2rem;
+    &__list > li{
+      margin: 2rem 0rem;
+    }
+  }

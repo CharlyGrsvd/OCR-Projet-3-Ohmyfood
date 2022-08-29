@@ -6,45 +6,15 @@
 
 @import "./Composants/buttons";
 
-.header {
-  text-align: center;
-  padding: 22px 0px 10px 0px;
-  &__logo {
-    height: 30px;
-    width: auto;
-  }
-}
+@import "./Layout/header";
+@import "./Layout/form";
+@import "./Layout/intro-accueil"
 
-.location-form {
-  background-color: var(--background-secondary);
-  padding: 15px 0;
-  text-align: center;
-  &__label > span {
-    font: 0/0 a;
-  }
-  &__label > i {
-    color: var(--ico-secondary);
-    padding-right: 10px;
-  }
-  &__input {
-    border: none;
-    background-color: var(--background-secondary);
-    width: 140px;
-  }
-  &__input::placeholder {
-    color: var(--ico-secondary);
-    font-weight: bold;
-  }
-}
 
-.intro {
-  text-align: center;
-  background: var(--background-tertiary);
-  padding: 40px 47px 55px 47px;
-  &__argument{
-    padding-bottom: 30px;
-  }
-}
+
+
+
+
 
 // .explaination {
 //   padding: 47px 20px 60px 20px;
@@ -72,7 +42,7 @@
 
 // .restaurants {
 //   padding: 47px 20px;
-//   background-color: var(--background-tertiary);
+//   background-color: var(--color-background);
 //   &__containerCards {
 //     display: flex;
 //     flex-direction: column;
