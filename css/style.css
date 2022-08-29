@@ -35,33 +35,50 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --font-family__title: "shrikhand", sans-serif;
+  --font-family__text: "roboto", sans-serif;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+  --text-primary: #000000;
+  --text-secondary:#FFFFFF;
+  --background-primary: #FFFFFF;
+  --background-secondary: #EAEAEA;
+  --background-tertiary: #F6F6F6;
+  --background-dark:#353535;
+  --ico-secondary:#353535;
+  --ico-primary:#7E7E7E;
+  --active: #F5EDFF;
+}
+
 .header {
   text-align: center;
+  padding: 22px 0px 10px 0px;
 }
-.header .header-logo {
-  padding: 22px 0 10px 0;
-}
-.header .header-logo__img {
+.header__logo {
   height: 30px;
   width: auto;
 }
-.header .header-formular {
+
+.location-form {
   background-color: var(--background-secondary);
   padding: 15px 0;
+  text-align: center;
 }
-.header .header-formular__hiddenLabel {
+.location-form__label > span {
   font: 0/0 a;
 }
-.header .header-formular__icoLabel {
+.location-form__label > i {
   color: var(--ico-secondary);
   padding-right: 10px;
 }
-.header .header-formular__input {
+.location-form__input {
   border: none;
   background-color: var(--background-secondary);
   width: 140px;
 }
-.header .header-formular__input::placeholder {
+.location-form__input::placeholder {
   color: var(--ico-secondary);
   font-weight: bold;
 }

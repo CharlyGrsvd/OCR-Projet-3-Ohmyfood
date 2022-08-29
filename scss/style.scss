@@ -1,36 +1,39 @@
 @import "./Base/base";
 @import "./Base/typography";
-@import "buttons";
-@import "cards";
+@import "./Utils/variables.scss";
+@import "./Composants/buttons";
+@import "./Composants/cards";
+
+@import "./Utils/mixins";
 
 .header {
   text-align: center;
-  .header-logo {
-    padding: 22px 0 10px 0;
-    &__img {
-      height: 30px;
-      width: auto;
-    }
+  padding: 22px 0px 10px 0px;
+  &__logo {
+    height: 30px;
+    width: auto;
   }
-  .header-formular {
+}
+
+.location-form {
+  background-color: var(--background-secondary);
+  padding: 15px 0;
+  text-align: center;
+  &__label > span {
+    font: 0/0 a;
+  }
+  &__label > i {
+    color: var(--ico-secondary);
+    padding-right: 10px;
+  }
+  &__input {
+    border: none;
     background-color: var(--background-secondary);
-    padding: 15px 0;
-    &__hiddenLabel {
-      font: 0/0 a;
-    }
-    &__icoLabel {
-      color: var(--ico-secondary);
-      padding-right: 10px;
-    }
-    &__input {
-      border: none;
-      background-color: var(--background-secondary);
-      width: 140px;
-    }
-    &__input::placeholder {
-      color: var(--ico-secondary);
-      font-weight: bold;
-    }
+    width: 140px;
+  }
+  &__input::placeholder {
+    color: var(--ico-secondary);
+    font-weight: bold;
   }
 }
 
@@ -94,13 +97,13 @@
 }
 
 .footer-content {
-    background-color: var(--background-dark);
+  background-color: var(--background-dark);
+  color: var(--text-secondary);
+  h2 {
+    font-family: var(--font-family__title);
+    font-size: 18px;
+  }
+  nav a {
     color: var(--text-secondary);
-    h2{
-        font-family: var(--font-family__title);
-        font-size: 18px;
-    }
-    nav a {
-        color: var(--text-secondary);
-    }
+  }
 }
