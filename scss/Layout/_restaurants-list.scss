@@ -1,0 +1,10 @@
+
+.restaurants{
+    background-color: $color-background;
+    padding: 4rem 2rem 6rem 2rem;
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}

@@ -11,52 +11,47 @@
     border-radius: 10rem;
     color: $color-white;
   }
-  &--step{
+  &--step {
     background-color: $color-background;
     border-radius: 2.5rem;
     padding: 2.5rem;
-    i{
+    i {
       padding-right: 2rem;
     }
-
   }
 }
 
-// @mixin secondary-btn-design {
-//   border: none;
-//   background: var(--background-secondary);
-//   border-radius: 10px;
-//   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-//   color: var(--text-primary);
-//   font-weight: bold;
-//   text-align: left;
-// }
+@mixin card {
+  @include card-frame;
+  &__img img{
+    @include card-img;
+  }
+  &__footer {
+    @include card-footer;
+  }
 
-// @mixin chip-design {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: var(--primary);
-//   color: var(--color-white);
-//   border-radius: 50%;
-//   height: 30px;
-//   width: 30px;
-// }
+}
 
-// @mixin card-design {
-//   background-color: var(--color-white);
-//   border-radius: 15px;
-//   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-// }
-// @mixin restaurant-imgCard-design {
-//   width: 100%;
-//   height: 170px;
-//   object-fit: cover;
-//   border-radius: 15px 15px 0px 0px;
-// }
-// @mixin card-descriptionCard-design {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 15px 20px 15px 20px;
-// }
+@mixin card-frame {
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+@mixin card-img {
+  width: 100%;
+  height: 17.5rem;
+  object-fit: cover;
+  object-position: 0% 61%;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+@mixin card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+
+

@@ -1,0 +1,11 @@
+.footer-content {
+    background-color: var(--background-dark);
+    color: var(--text-secondary);
+    h2 {
+      font-family: var(--font-family__title);
+      font-size: 18px;
+    }
+    nav a {
+      color: var(--text-secondary);
+    }
+  }

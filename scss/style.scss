@@ -5,71 +5,13 @@
 @import "./Base/typography";
 
 @import "./Composants/buttons";
-
-@import "./Layout/header";
-@import "./Layout/form";
-@import "./Layout/intro-accueil"
+@import "./Composants/cards";
 
 
 
+@import "./Pages/accueil";
 
 
 
 
-// .explaination {
-//   padding: 47px 20px 60px 20px;
-//   &__stepContainer {
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 30px;
-//     padding-left: 17px;
-//   }
-//   &__stepButton {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     padding: 20px 0px;
-//     @include secondary-btn-design;
-//   }
-//   &__stepNumber {
-//     margin-left: -17px;
-//     @include chip-design;
-//   }
-//   &__stepIcon {
-//     padding: 0px 16px;
-//   }
-// }
 
-// .restaurants {
-//   padding: 47px 20px;
-//   background-color: var(--color-background);
-//   &__containerCards {
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 30px;
-//     .card {
-//       @include card-design;
-//       &__link {
-//         display: block;
-//       }
-//       &__img {
-//         @include restaurant-imgCard-design;
-//       }
-//       &__description {
-//         @include card-descriptionCard-design;
-//       }
-//     }
-//   }
-// }
-
-// .footer-content {
-//   background-color: var(--background-dark);
-//   color: var(--text-secondary);
-//   h2 {
-//     font-family: var(--font-family__title);
-//     font-size: 18px;
-//   }
-//   nav a {
-//     color: var(--text-secondary);
-//   }
-// }
