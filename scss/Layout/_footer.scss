@@ -1,11 +1,26 @@
 .footer-content {
-    background-color: var(--background-dark);
-    color: var(--text-secondary);
-    h2 {
-      font-family: var(--font-family__title);
-      font-size: 18px;
+  background-color: darken($color-background, $amount: 75%);
+  color: $color-white;
+  padding: 2.5rem 2rem;
+  &__heading {
+    font-family: "shrikhand", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+  }
+  &__links {
+    list-style: none;
+    a {
+      color: $color-white;
+      font-weight: 400;
+      line-height: 2.5rem;
     }
-    nav a {
-      color: var(--text-secondary);
+    i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+    span{
+        margin-left: 0.6rem;
     }
   }
+}
