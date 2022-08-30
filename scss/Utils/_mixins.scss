@@ -28,6 +28,7 @@
 }
 
 @mixin card {
+  cursor:pointer; 
   @include card-frame;
   &__img img {
     @include card-img;

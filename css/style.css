@@ -80,6 +80,7 @@ a {
 }
 
 .card {
+  cursor: pointer;
   background-color: var(--color-white);
   border-radius: 1.5rem;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
@@ -183,6 +184,15 @@ a {
 }
 .footer-content__links span {
   margin-left: 0.6rem;
+}
+
+.header {
+  text-align: center;
+  padding: 22px 0px 10px 0px;
+}
+.header__logo {
+  height: 30px;
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
