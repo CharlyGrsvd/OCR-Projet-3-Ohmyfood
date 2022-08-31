@@ -1,5 +1,27 @@
-@import"../Layout/header";
-@import"../Layout/form";
-@import"../Layout/intro-accueil";
-@import "../Layout/restaurants-list";
-@import"../Layout/footer";
+// welcome page ----> Introduction settings
+.accueil-intro {
+    text-align: center;
+    background: $color-background;
+    padding: 4rem 2rem 5.5rem 2rem;
+    &__argument{
+      padding-bottom: 3rem;
+    }
+  }
+
+  .explaination{
+    padding: 5rem 2rem 5rem 2rem;
+    &__list  > li{
+      margin-bottom: 2rem;
+    }
+  }
+
+// Welcome page --->Restaurant list settings
+.restaurants{
+    background-color: $color-background;
+    padding: 4rem 2rem 6rem 2rem;
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}

@@ -1,3 +1,37 @@
+// Bloc image introduction settings
+.restaurant-intro {
+    &__img{
+        display: block;
+        width: 100%;
+        height: 26rem;
+        object-fit: cover;
+    }
+  }
 
-@import"../Layout/intro-menu";
-@import"../Layout/restaurant-menu";
+//   Menu section settings
+.restaurant-menu {
+    position: relative;
+    margin-top: -5rem;
+    background-color: $color-background;
+    border-radius: 4.5rem 4.5rem 0rem 0rem;
+    padding: 4rem 1.5rem;
+    &__heading {
+      font-family: "shrikhand";
+      font-size: 2.8rem;
+    }
+    &__dish {
+      font-weight: 100;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+    &__list {
+      padding-bottom: 2rem;
+      li {
+        margin-bottom: 2rem;
+        list-style: none;
+      }
+    }
+    &__order {
+      text-align: center;
+    }
+  }
