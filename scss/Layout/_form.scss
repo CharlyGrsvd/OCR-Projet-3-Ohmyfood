@@ -1,21 +1,21 @@
 .location-form {
-    background-color: darken($color-background, $amount: 5%);
-    padding: 15px 0;
-    text-align: center;
-    &__label > span {
-      font: 0/0 a;
-    }
-    &__label > i {
-      color: darken($color-background, $amount: 75%);
-      padding-right: 10px;
-    }
-    &__input {
-      border: none;
-      background-color: darken($color-background, $amount: 5%);
-      width: 140px;
-    }
-    &__input::placeholder {
-      color: darken($color-background, $amount: 75%);
-      font-weight: 600;
-    }
+  background-color: darken($color-background, $amount: 5%);
+  padding: 15px 0;
+  text-align: center;
+  &__label > span {
+    font: 0/0 a;
   }
+  &__label > i {
+    color: darken($color-background, $amount: 75%);
+    padding-right: 10px;
+  }
+  &__input {
+    border: none;
+    background-color: darken($color-background, $amount: 5%);
+    width: 140px;
+  }
+  &__input::placeholder {
+    color: darken($color-background, $amount: 75%);
+    font-weight: 600;
+  }
+}

@@ -119,6 +119,21 @@ a {
   font-size: 2.5rem;
 }
 
+.bullet-point {
+  background-color: #9356dc;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border-radius: 5rem;
+}
+
 .header {
   text-align: center;
   padding: 22px 0px 10px 0px;
@@ -194,7 +209,10 @@ a {
 .explaination {
   padding: 5rem 2rem 5rem 2rem;
 }
-.explaination__list > li {
+.explaination__list {
+  list-style: none;
+}
+.explaination__list li {
   margin-bottom: 2rem;
 }
 
