@@ -10,11 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-#text {
-  height: 0;
-  width: 0;
-}
-
 body {
   font-family: "roboto", sans-serif;
   color: #000000;
@@ -132,6 +127,11 @@ a {
   height: 30px;
   width: auto;
 }
+.header__back-link {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 2rem;
+}
 
 .location-form {
   background-color: #e9e9e9;
@@ -208,26 +208,19 @@ a {
   margin-left: 0.6rem;
 }
 
-.header {
-  text-align: center;
-  padding: 22px 0px 10px 0px;
-}
-.header__logo {
-  height: 30px;
-  width: auto;
-}
-
 .restaurant-intro {
   background: red;
 }
 .restaurant-intro__img {
+  display: block;
   width: 100%;
   height: 26rem;
   object-fit: cover;
 }
 
 .restaurant-menu {
-  transform: translateY(-50px);
+  position: relative;
+  margin-top: -5rem;
   background-color: #f6f6f6;
   border-radius: 4.5rem 4.5rem 0rem 0rem;
   padding: 4rem 1.5rem 6rem 1.5rem;
@@ -248,11 +241,8 @@ a {
   margin-bottom: 2rem;
   list-style: none;
 }
-
-.restaurant-order {
+.restaurant-menu__order {
   text-align: center;
-  background-color: #f6f6f6;
-  padding: 4rem 1.5rem 6rem 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

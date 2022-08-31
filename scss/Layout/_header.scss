@@ -1,8 +1,13 @@
 .header {
-    text-align: center;
-    padding: 22px 0px 10px 0px;
-    &__logo {
-      height: 30px;
-      width: auto;
-    }
+  text-align: center;
+  padding: 22px 0px 10px 0px;
+  &__logo {
+    height: 30px;
+    width: auto;
   }
+  &__back-link {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 2rem;
+  }
+}

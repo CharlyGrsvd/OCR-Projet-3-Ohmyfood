@@ -1,5 +1,7 @@
 .restaurant-menu {
-  transform: translateY(-50px);
+  //   transform: translateY(-50px);
+  position: relative;
+  margin-top: -5rem;
   background-color: $color-background;
   border-radius: 4.5rem 4.5rem 0rem 0rem;
   padding: 4rem 1.5rem 6rem 1.5rem;
@@ -19,10 +21,7 @@
       list-style: none;
     }
   }
-}
-
-.restaurant-order{
+  &__order {
     text-align: center;
-    background-color: $color-background;
-    padding: 4rem 1.5rem 6rem 1.5rem;
+  }
 }
