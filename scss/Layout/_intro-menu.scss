@@ -1,0 +1,8 @@
+.restaurant-intro {
+    background: red;
+    &__img{
+        width: 100%;
+        height: 26rem;
+        object-fit: cover;
+    }
+  }

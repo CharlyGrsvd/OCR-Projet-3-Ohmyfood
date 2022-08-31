@@ -1,0 +1,28 @@
+.restaurant-menu {
+  transform: translateY(-50px);
+  background-color: $color-background;
+  border-radius: 4.5rem 4.5rem 0rem 0rem;
+  padding: 4rem 1.5rem 6rem 1.5rem;
+  &__heading {
+    font-family: "shrikhand";
+    font-size: 2.8rem;
+  }
+  &__dish {
+    font-weight: 100;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  &__list {
+    padding-bottom: 2rem;
+    li {
+      margin-bottom: 2rem;
+      list-style: none;
+    }
+  }
+}
+
+.restaurant-order{
+    text-align: center;
+    background-color: $color-background;
+    padding: 4rem 1.5rem 6rem 1.5rem;
+}
