@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w scss:css" 
+    "sass": "sass -w scss:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.54.5"
   }
 }

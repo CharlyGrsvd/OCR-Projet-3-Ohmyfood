@@ -5,9 +5,7 @@
   font-weight: bold;
   cursor: pointer;
   &--primary {
-    background: -webkit-linear-gradient(bottom right, #9456dc, #ff79db);
-    background: -moz-linear-gradient(bottom right, #9456dc, #ff79db);
-    background: linear-gradient(to top left, #9456dc, #ff79db);
+    background: $color-linear-gradient--primaryToSecondary;
     border-radius: 10rem;
     color: $color-white;
   }
@@ -39,9 +37,7 @@
     }
   }
   &--order {
-    background: -webkit-linear-gradient(bottom right, #9456dc, #ff79db);
-    background: -moz-linear-gradient(bottom right, #9456dc, #ff79db);
-    background: linear-gradient(to top left, #9456dc, #ff79db);
+    background: $color-linear-gradient--primaryToSecondary;
     border-radius: 10rem;
     color: $color-white;
     padding: 1.7rem 5rem;
