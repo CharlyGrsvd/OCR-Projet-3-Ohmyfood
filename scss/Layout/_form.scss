@@ -1,7 +1,9 @@
+
 .location-form {
   background-color: darken($color-background, $amount: 5%);
   padding: 15px 0;
   text-align: center;
+  box-shadow: inset 0px 10px 14px -9px darken($color-background, $amount:30%);
   &__label > span {
     font: 0/0 a;
   }
