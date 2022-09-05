@@ -1,5 +1,9 @@
 // Bloc image introduction settings
 .restaurant-intro {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 5rem 0rem;
+  }
   &__img {
     display: block;
     width: 100%;
@@ -47,6 +51,17 @@
     li {
       margin-bottom: 2rem;
       list-style: none;
+      opacity: 0;
+      animation: slide-menu 1000ms both;
+      &:nth-of-type(1) {
+        animation-delay: 100ms;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 300ms;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 450ms;
+      }
     }
   }
   &__order {
