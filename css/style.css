@@ -358,9 +358,46 @@ footer .footer-content__links span {
   font-family: "shrikhand";
   font-size: 2.8rem;
 }
-.restaurant-menu__heading i {
+.restaurant-menu__heading::before {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+.restaurant-menu__heading::after {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+  background: linear-gradient(to top left, #9456dc, #ff79db);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  opacity: 0;
+}
+.restaurant-menu__heading:hover::after {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.15);
 }
 .restaurant-menu__dish {
   position: relative;
