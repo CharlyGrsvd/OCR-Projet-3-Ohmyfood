@@ -1,4 +1,5 @@
 // Bloc image introduction settings
+
 .restaurant-intro {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -19,10 +20,33 @@
   background-color: $color-background;
   border-radius: 4.5rem 4.5rem 0rem 0rem;
   padding: 4rem 1.5rem;
+  @media screen and (min-width: 768px){
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding: 5rem 2rem;
+  }
+  @media screen and (min-width: 1120px) {
+    display: grid;
+    padding: 17rem 2rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
   &__heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 768px){
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+    @media screen and (min-width: 1120px) {
+      grid-column: 1 / 4;
+      grid-row: 1;
+
+    }
     & h1 {
       font-family: "shrikhand";
       font-size: 2.8rem;
@@ -39,11 +63,35 @@
       font-weight: 900;
       opacity: 0;
     }
-    &:hover::after{
+    &:hover::after {
       opacity: 1;
       cursor: pointer;
       transform: scale(1.15);
     }
+  }
+  &__order {
+    text-align: center;
+    @media screen and (min-width: 768px){
+
+      align-self: center;
+      align-items: center;
+
+    }
+    @media screen and (min-width: 1120px) {
+      grid-row: 3;
+      align-self: center;
+      align-items: center;
+      grid-column: 2;
+    }
+  }
+}
+
+.container-dish {
+  @media screen and (min-width: 768px){
+    justify-self: center;
+  }
+  @media screen and (min-width: 1120px){
+    justify-self: center;
   }
   &__dish {
     position: relative;
@@ -61,6 +109,9 @@
   }
   &__list {
     padding-bottom: 2rem;
+    @media screen and (min-width: 768px){
+      // grid-row: 2 / 3;
+    }
     li {
       overflow: hidden;
       margin-bottom: 2rem;
@@ -77,8 +128,5 @@
         animation-delay: 450ms;
       }
     }
-  }
-  &__order {
-    text-align: center;
   }
 }

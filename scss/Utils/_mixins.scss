@@ -30,7 +30,6 @@
     font-weight: 100;
     font-size: 1.5rem;
     display: flex;
-    max-width: 345px;
     & .dish__description {
       padding: 1.5rem;
       overflow: hidden;
@@ -106,9 +105,30 @@
 
 @mixin card-footer {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
+  &::before {
+    @include like-btn;
+    top: 2.3rem;
+  }
+  &::after {
+    @include like-btn;
+    background: linear-gradient(to top left, #9456dc, #ff79db);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    opacity: 0;
+    top: 2.4rem;
+    right: 2.1rem;
+  }
+  &:hover::after {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.15);
+  }
   i {
     font-size: 2.5rem;
   }
@@ -130,10 +150,10 @@
   border-radius: 5rem;
 }
 
-@mixin like-btn{
+@mixin like-btn {
   display: inline-block;
   position: absolute;
-  right: 1rem;
+  right: 2rem;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -143,6 +163,5 @@
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 500ms ease-in-out;
-
+  transition: all 350ms ease-in-out;
 }
