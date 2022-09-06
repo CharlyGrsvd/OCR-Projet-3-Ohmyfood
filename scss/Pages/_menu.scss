@@ -49,6 +49,7 @@
   &__list {
     padding-bottom: 2rem;
     li {
+      overflow: hidden;
       margin-bottom: 2rem;
       list-style: none;
       opacity: 0;

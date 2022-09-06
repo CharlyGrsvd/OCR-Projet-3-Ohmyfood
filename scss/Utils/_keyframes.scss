@@ -1,6 +1,6 @@
 @keyframes slide-menu {
   0% {
-    opacity:0;
+    opacity: 0;
     transform: translateY(20px);
   }
   100% {
@@ -8,3 +8,13 @@
     transform: translateY(0px);
   }
 }
+
+@keyframes rotation-confirm {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform:rotate(0deg);
+  }
+}
+

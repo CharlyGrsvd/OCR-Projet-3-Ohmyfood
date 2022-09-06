@@ -1,6 +1,6 @@
+// @import"./keyframes";
 @mixin btn {
   border: none;
-  padding: 1.8rem 2.2rem;
   box-shadow: 0rem 0.3rem 1.5rem rgba(0, 0, 0, 0.2);
   font-weight: bold;
   cursor: pointer;
@@ -8,6 +8,7 @@
     background: $color-linear-gradient--primaryToSecondary;
     border-radius: 10rem;
     color: $color-white;
+    padding: 1.8rem 2.2rem;
   }
   &--step {
     background-color: $color-background;
@@ -26,14 +27,47 @@
   &--dish {
     background-color: $color-background;
     border-radius: 1.5rem;
-    padding: 1.5rem 2.5rem 1.5rem 1rem;
     font-weight: 100;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    span {
+    max-width: 345px;
+    & .dish__description {
+      padding: 1.5rem;
+      overflow: hidden;
+      h3,
+      p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    & .dish__price {
       font-weight: 700;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+      margin-left: auto;
+    }
+    & .dish__confirm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 9rem;
+      background-color: $color-tertiary;
+      border-radius: 0rem 1.5rem 1.5rem 0rem;
+      font-size: 3rem;
+      color: white;
+      margin-right: -9rem;
+      transition: margin 500ms;
+      flex-shrink: 0;
+    }
+    &:hover {
+      .dish__confirm {
+        margin: 0;
+      }
+      i {
+        animation: rotation-confirm 500ms ease-in-out;
+      }
     }
   }
   &--order {
