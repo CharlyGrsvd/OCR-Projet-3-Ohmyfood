@@ -117,15 +117,15 @@
       margin-bottom: 2rem;
       list-style: none;
       opacity: 0;
-      animation: slide-menu 1000ms both;
+      animation: slide-menu 200ms both;
       &:nth-of-type(1) {
-        animation-delay: 100ms;
+        animation-delay: 50ms;
       }
       &:nth-of-type(2) {
-        animation-delay: 300ms;
+        animation-delay: 70ms;
       }
       &:nth-of-type(3) {
-        animation-delay: 450ms;
+        animation-delay: 100ms;
       }
     }
   }

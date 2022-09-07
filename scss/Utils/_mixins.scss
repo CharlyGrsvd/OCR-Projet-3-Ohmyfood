@@ -57,7 +57,7 @@
       font-size: 3rem;
       color: white;
       margin-right: -9rem;
-      transition: margin 500ms;
+      transition: margin 100ms;
       flex-shrink: 0;
     }
     &:hover {
@@ -65,7 +65,7 @@
         margin: 0;
       }
       i {
-        animation: rotation-confirm 500ms ease-in-out;
+        animation: rotation-confirm 100ms ease-in-out;
       }
     }
   }
@@ -129,9 +129,6 @@
     cursor: pointer;
     transform: scale(1.15);
   }
-  i {
-    font-size: 2.5rem;
-  }
 }
 
 @mixin bullet-point {
@@ -163,5 +160,5 @@
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 50ms ease-in-out;
 }

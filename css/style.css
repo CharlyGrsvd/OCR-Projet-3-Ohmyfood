@@ -1,11 +1,11 @@
 @keyframes slide-menu {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(2rem);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
 }
 @keyframes rotation-confirm {
@@ -145,14 +145,14 @@ a {
   font-size: 3rem;
   color: white;
   margin-right: -9rem;
-  transition: margin 500ms;
+  transition: margin 100ms;
   flex-shrink: 0;
 }
 .btn--dish:hover .dish__confirm {
   margin: 0;
 }
 .btn--dish:hover i {
-  animation: rotation-confirm 500ms ease-in-out;
+  animation: rotation-confirm 100ms ease-in-out;
 }
 .btn--order {
   background: linear-gradient(to top left, #9456dc, #ff79db);
@@ -195,7 +195,7 @@ a {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 50ms ease-in-out;
   top: 2.3rem;
 }
 .card__footer::after {
@@ -211,7 +211,7 @@ a {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 50ms ease-in-out;
   background: linear-gradient(to top left, #9456dc, #ff79db);
   background-clip: text;
   -webkit-background-clip: text;
@@ -225,9 +225,6 @@ a {
   opacity: 1;
   cursor: pointer;
   transform: scale(1.15);
-}
-.card__footer i {
-  font-size: 2.5rem;
 }
 
 .bullet-point {
@@ -269,13 +266,14 @@ a {
   position: fixed;
   height: 100%;
   width: 100%;
-  font-size: 5rem;
   inset: 0;
   z-index: 1;
   opacity: 0.95;
-  animation: loader 2s both;
+  animation: loader 500ms both;
 }
 .loader h1 {
+  font-size: 8rem;
+  color: black;
   font-family: "shrikhand", sans-serif;
   padding: 0rem 2rem;
 }
@@ -294,8 +292,8 @@ a {
   height: 5rem;
   border-radius: 50px;
   border: 0.6rem solid transparent;
-  border-top-color: #ffffff;
-  animation: spinner 1000ms ease-in-out;
+  border-top-color: #99e2d0;
+  animation: spinner 500ms ease-in-out;
 }
 
 .wrapper {
@@ -519,7 +517,7 @@ footer .footer-content__links span {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 50ms ease-in-out;
 }
 .restaurant-menu__heading::after {
   display: inline-block;
@@ -534,7 +532,7 @@ footer .footer-content__links span {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 50ms ease-in-out;
   background: linear-gradient(to top left, #9456dc, #ff79db);
   background-clip: text;
   -webkit-background-clip: text;
@@ -597,16 +595,16 @@ footer .footer-content__links span {
   margin-bottom: 2rem;
   list-style: none;
   opacity: 0;
-  animation: slide-menu 1000ms both;
+  animation: slide-menu 200ms both;
 }
 .container-dish__list li:nth-of-type(1) {
-  animation-delay: 100ms;
+  animation-delay: 50ms;
 }
 .container-dish__list li:nth-of-type(2) {
-  animation-delay: 300ms;
+  animation-delay: 70ms;
 }
 .container-dish__list li:nth-of-type(3) {
-  animation-delay: 450ms;
+  animation-delay: 100ms;
 }
 
 /*# sourceMappingURL=style.css.map */
