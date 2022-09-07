@@ -145,14 +145,14 @@ a {
   font-size: 3rem;
   color: white;
   margin-right: -9rem;
-  transition: margin 100ms;
+  transition: margin 500ms;
   flex-shrink: 0;
 }
 .btn--dish:hover .dish__confirm {
   margin: 0;
 }
 .btn--dish:hover i {
-  animation: rotation-confirm 100ms ease-in-out;
+  animation: rotation-confirm 500ms ease-in-out;
 }
 .btn--order {
   background: linear-gradient(to top left, #9456dc, #ff79db);
@@ -195,7 +195,7 @@ a {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 50ms ease-in-out;
+  transition: all 350ms ease-in-out;
   top: 2.3rem;
 }
 .card__footer::after {
@@ -211,7 +211,7 @@ a {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 50ms ease-in-out;
+  transition: all 350ms ease-in-out;
   background: linear-gradient(to top left, #9456dc, #ff79db);
   background-clip: text;
   -webkit-background-clip: text;
@@ -269,7 +269,7 @@ a {
   inset: 0;
   z-index: 1;
   opacity: 0.95;
-  animation: loader 500ms both;
+  animation: loader 2000ms both;
 }
 .loader h1 {
   font-size: 8rem;
@@ -293,7 +293,7 @@ a {
   border-radius: 50px;
   border: 0.6rem solid transparent;
   border-top-color: #99e2d0;
-  animation: spinner 500ms ease-in-out;
+  animation: spinner 1000ms ease-in-out;
 }
 
 .wrapper {
@@ -517,7 +517,7 @@ footer .footer-content__links span {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 50ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 .restaurant-menu__heading::after {
   display: inline-block;
@@ -532,7 +532,7 @@ footer .footer-content__links span {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   opacity: 1;
-  transition: all 50ms ease-in-out;
+  transition: all 350ms ease-in-out;
   background: linear-gradient(to top left, #9456dc, #ff79db);
   background-clip: text;
   -webkit-background-clip: text;
@@ -595,16 +595,16 @@ footer .footer-content__links span {
   margin-bottom: 2rem;
   list-style: none;
   opacity: 0;
-  animation: slide-menu 200ms both;
+  animation: slide-menu 1000ms both;
 }
 .container-dish__list li:nth-of-type(1) {
-  animation-delay: 50ms;
+  animation-delay: 100ms;
 }
 .container-dish__list li:nth-of-type(2) {
-  animation-delay: 70ms;
+  animation-delay: 300ms;
 }
 .container-dish__list li:nth-of-type(3) {
-  animation-delay: 100ms;
+  animation-delay: 450ms;
 }
 
 /*# sourceMappingURL=style.css.map */

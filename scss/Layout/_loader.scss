@@ -9,7 +9,7 @@
     inset: 0;
     z-index: 1;
     opacity: 0.95;
-    animation: loader 500ms both;
+    animation: loader 2000ms both;
     & h1{
         font-size: 8rem;
         color: black;
@@ -32,7 +32,7 @@
         border-radius: 50px;
         border: 0.6rem solid transparent;
         border-top-color: $color-tertiary;
-        animation: spinner 500ms ease-in-out ;
+        animation: spinner 1000ms ease-in-out ;
         
 
     }
