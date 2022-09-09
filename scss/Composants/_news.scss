@@ -1,16 +1,13 @@
-.card{
-    position: relative;
-    &__news{
+.card__news{
+        position: absolute;
         display: flex;
         font-weight: 700;
         background-color: #99E2D0;
         color: #2c9c81;
-        position: absolute;
         top: 1rem;
         right: 2rem;
         padding: 0rem 1rem;
         border-radius: 0.2rem;
     }
-}
 
 

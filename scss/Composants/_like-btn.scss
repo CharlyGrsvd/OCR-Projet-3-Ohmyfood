@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+  & .fa-heart {
+    position: absolute;
+    bottom: 3rem;
+    right: 2.5rem;
+    padding: 0.1rem;
+    border-radius: 50px;
+  }
+  & .fa-solid {
+    background: $color-linear-gradient--primaryToSecondary;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+  }
+  & :hover .fa-solid {
+    opacity: 1;
+    transform: scale(1.15);
+    transform-origin: center;
+    transition: all 500ms cubic-bezier(.57,.74,.84,-0.06);
+  }
+}
+
