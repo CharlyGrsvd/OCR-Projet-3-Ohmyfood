@@ -128,6 +128,11 @@ a {
   font-size: 1.5rem;
   display: flex;
 }
+@media screen and (min-width: 1220px) {
+  .btn--dish {
+    width: 34.5rem;
+  }
+}
 .btn--dish .dish__description {
   padding: 1.5rem;
   overflow: hidden;
@@ -235,6 +240,7 @@ a {
   right: 2.5rem;
   padding: 0.1rem;
   border-radius: 50px;
+  font-size: 2.5rem;
 }
 .card .fa-solid {
   background: linear-gradient(to top left, #9356dc, #ff79da);
@@ -458,39 +464,23 @@ footer .footer-content__links span {
 }
 @media screen and (min-width: 768px) {
   .restaurant-menu {
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    padding: 5rem 2rem;
+    padding: 4rem 7.5rem;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1220px) {
   .restaurant-menu {
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    padding: 4rem 7.5rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .restaurant-menu__container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .restaurant-menu__heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .restaurant-menu__heading {
-    grid-column: 1/3;
-    grid-row: 1;
-  }
-}
-@media screen and (min-width: 1120px) {
-  .restaurant-menu__heading {
-    grid-column: 1/4;
-    grid-row: 1;
-  }
-}
-.restaurant-menu__heading h1 {
   font-family: "shrikhand";
   font-size: 2.8rem;
 }
@@ -540,27 +530,13 @@ footer .footer-content__links span {
 .restaurant-menu__order {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .restaurant-menu__order {
-    align-self: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1120px) {
-  .restaurant-menu__order {
-    grid-row: 3;
-    align-self: center;
-    align-items: center;
-    grid-column: 2;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .container-dish {
     justify-self: center;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1220px) {
   .container-dish {
     justify-self: center;
   }
