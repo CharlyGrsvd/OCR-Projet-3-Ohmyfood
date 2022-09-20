@@ -10,7 +10,7 @@
 }
 @keyframes rotation-confirm {
   0% {
-    transform: rotate(-180deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0deg);
@@ -96,7 +96,6 @@ a {
   border-radius: 10rem;
   color: #ffffff;
   padding: 1.8rem 2.2rem;
-  scale: 1;
   transition-duration: 300ms;
 }
 .btn--primary:hover {
@@ -115,8 +114,6 @@ a {
 }
 .btn--step:hover {
   background-color: #f4eefc;
-  box-shadow: 0rem 0.3rem 1.5rem rgba(0, 0, 0, 0.7);
-  transform: scale(1.05);
 }
 .btn--step:hover i {
   color: #9356dc;
@@ -160,14 +157,14 @@ a {
   font-size: 3rem;
   color: white;
   margin-right: -9rem;
-  transition: margin 500ms;
+  transition: margin 300ms;
   flex-shrink: 0;
 }
 .btn--dish:hover .dish__confirm {
   margin: 0;
 }
 .btn--dish:hover i {
-  animation: rotation-confirm 500ms ease-in-out;
+  animation: rotation-confirm 300ms ease-in-out;
 }
 .btn--order {
   background: linear-gradient(to top left, #9356dc, #ff79da);

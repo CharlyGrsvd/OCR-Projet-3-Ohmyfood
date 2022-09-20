@@ -9,7 +9,6 @@
     border-radius: 10rem;
     color: $color-white;
     padding: 1.8rem 2.2rem;
-    scale: 1;
     transition-duration: 300ms;
     &:hover {
       box-shadow: 0rem 0.3rem 1.5rem rgba(0, 0, 0, 0.7);
@@ -27,8 +26,6 @@
     }
     &:hover {
       background-color: lighten($color-primary, $amount: 36%);
-      box-shadow: 0rem 0.3rem 1.5rem rgba(0, 0, 0, 0.7);
-      transform: scale(1.05);
       i {
         color: $color-primary;
       }
@@ -70,7 +67,7 @@
       font-size: 3rem;
       color: white;
       margin-right: -9rem;
-      transition: margin 500ms;
+      transition: margin 300ms;
       flex-shrink: 0;
     }
     &:hover {
@@ -78,7 +75,7 @@
         margin: 0;
       }
       i {
-        animation: rotation-confirm 500ms ease-in-out;
+        animation: rotation-confirm 300ms ease-in-out;
       }
     }
   }
